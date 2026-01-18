@@ -1,0 +1,16 @@
+if BOARD_WONDERBOARD
+
+config BOARD
+    default "wonderboard"
+
+if USB_DEVICE_STACK
+
+config USB_NRFX
+    default y
+
+endif # USB_DEVICE_STACK
+
+config BT_CTLR
+    default BT
+
+endif #BOARD_WONDERBOARD

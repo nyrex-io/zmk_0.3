@@ -1,0 +1,25 @@
+if SHIELD_NYREX65X2
+
+config ZMK_KEYBOARD_NAME
+    default "Nyrex 65X2"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
+    default y
+
+endif
+
+if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_STUDIO
+    default y
+
+endif

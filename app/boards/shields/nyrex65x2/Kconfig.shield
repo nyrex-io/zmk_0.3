@@ -1,0 +1,5 @@
+config SHIELD_NYREX65X2
+    def_bool $(shields_list_contains,nyrex65x2_left)
+
+config SHIELD_NYREX65X2
+    def_bool $(shields_list_contains,nyrex65x2_right)

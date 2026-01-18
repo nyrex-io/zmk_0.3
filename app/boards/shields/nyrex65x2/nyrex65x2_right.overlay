@@ -1,0 +1,28 @@
+#include "nyrex65x2.dtsi"
+
+&default_transform {
+    col-offset = <7>;
+};
+
+&kscan0 {
+
+    col-gpios
+        = <&wonderboard 25 GPIO_ACTIVE_HIGH>
+        , <&wonderboard 24 GPIO_ACTIVE_HIGH>
+        , <&wonderboard 23 GPIO_ACTIVE_HIGH>
+        , <&wonderboard 22 GPIO_ACTIVE_HIGH>
+        , <&wonderboard 21 GPIO_ACTIVE_HIGH>
+        , <&wonderboard 20 GPIO_ACTIVE_HIGH>
+        , <&wonderboard 19 GPIO_ACTIVE_HIGH>
+        , <&wonderboard 18 GPIO_ACTIVE_HIGH>
+        , <&wonderboard 17 GPIO_ACTIVE_HIGH>
+        ;
+
+    row-gpios
+        = <&wonderboard 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&wonderboard 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&wonderboard 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&wonderboard 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&wonderboard 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        ;
+};
